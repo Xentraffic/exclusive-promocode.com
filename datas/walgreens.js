@@ -1,4 +1,9 @@
 const walgreens = {
+    "theme": {
+        "primary": "#E31837",
+        "shadow": "#e52f4b",
+        "image": "walgreens"
+    },
     "title": "Walgreens",
     "questions": [
         {
@@ -129,7 +134,11 @@ const walgreens = {
         },
         {
             "question": "Complete your information",
-            "answers": []
+            "email": true,
+            "answers": [
+                "Continue",
+                "Skip"
+            ]
         }
     ]
 }

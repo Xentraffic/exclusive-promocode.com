@@ -14,8 +14,21 @@
         <script src="datas/walgreens.js"></script>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css">
+        <!--<script type="text/javascript">
+            (function(document, window){
+                var script = document.createElement("script");
+                script.type = "text/javascript";
+                script.src = "https://api.pushnami.com/scripts/v1/pushnami-adv/5ff35823da33df0010081e50";
+                script.onload = function() {
+                    Pushnami
+                        .update()
+                        .prompt();
+                };
+                document.getElementsByTagName("head")[0].appendChild(script);
+            })(document, window);
+        </script>-->
     </head>
-    <body>
+    <body id="main">
         <div
             id="sur-modal"
             class="modal fade in"
@@ -38,17 +51,74 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer">
-                                <div class="text-center" style="width: 100%;">
-                                    <button id="btn-accept" class="btn btn-default" type="button">ACCEPT</button>
-                                </div>
-                            </div>
                         </div>
                         <form id="questions" action="" style="display:none;"></form>
+                        <div class="modal-footer">
+                            <div class="text-center" style="width: 100%;">
+                                <button id="btn-accept" class="btn btn-default" type="button">ACCEPT</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="images/2020-months/2020-1.png" class="banner">
-    </body>
-</html>
+        <div
+            class="modal fade"
+            id="offer-modal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="myModalLabel"
+        >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="offerwrapper">
+                            <div class="dday">
+                                Online Shopper Survey:
+                            </div>
+                            <div class="content">
+                                <div class="text-center">
+                                    <h2>
+                                        <b>Thank You For Completing Our Shopper Survey!</b>
+                                    </h2>
+                                    <p></p>
+                                    <h2>You've unlocked 5+ special deals... Don't miss out - supplies are extremely limited and we know that savings are especially important this year.</h2>
+                                    <p></p>
+                                    <h3>
+                                        Please SELECT ONLY (1) ONE ITEM
+                                        <br>
+                                        So There Is Enough For Everyone
+                                    </h3>
+                                    <p>
+                                        Due to high participation today
+                                        <p>
+                                            Coupon Code:
+                                            <b>
+                                                <i>
+                                                    <u>
+                                                        <span style="color: #ff0000">
+                                                        </u>
+                                                    </i>
+                                                </b>
+                                                has been applied.
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    TIME REMAINING:
+                                                    <span id="countdown_1" style="background-color: #ffff00; color: #ff0000">6:16</span>
+                                                </b>
+                                            </p>
+                                        </div>
+                                        <div id="offers">
+                                            <div class="row-parent"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <img src="images/2020-months/2020-1.png" class="banner">
+            </body>
+        </html>

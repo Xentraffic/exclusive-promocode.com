@@ -1,4 +1,9 @@
 const homedepot = {
+    "theme": {
+        "primary": "#F68121",
+        "shadow": "#ff9e4d",
+        "image": "tools"
+    },
     "title": "Home Depot",
     "questions": [
         {
@@ -128,7 +133,11 @@ const homedepot = {
         },
         {
             "question": "Complete your information",
-            "answers": []
+            "email": true,
+            "answers": [
+                "Continue",
+                "Skip"
+            ]
         }
     ]
 }

@@ -27,9 +27,19 @@ img.banner {
   text-align: center !important;
 }
 
-.h1, .h2, .h3, h1, h2, h3 {
+.h1,
+.h2,
+.h3,
+h1,
+h2,
+h3 {
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.h1,
+h1 {
+  font-size: 36px;
 }
 
 .modal .modal-body {
@@ -48,13 +58,229 @@ img.banner {
 .modal .modal-footer {
   text-align: center;
   background: #232f3e;
+  min-height: 68px;
 }
 
 .modal .modal-footer button {
   width: 30%;
   font-size: 18px;
-  color: #FFF;
-  background: #F68121;
+  color: #fff;
+  background: #f68121;
   border: none;
-  box-shadow: 0 1px 0 1px #FF9E4D;
+  box-shadow: 0 1px 0 1px #ff9e4d;
+}
+
+.dday {
+  text-align: center;
+  background: #f68121;
+  color: #fff;
+  margin-bottom: 15px;
+  padding: 5px 0;
+  margin-top: 1rem;
+}
+
+#questions .question {
+  margin-bottom: 30px;
+  padding: 1px;
+  display: none;
+}
+
+#questions .question.active {
+  display: block;
+}
+
+#questions .q,
+#questions .q-count {
+  font-weight: 900;
+}
+
+#questions .q,
+#questions .q-count {
+  font-weight: 900;
+}
+
+#questions .q {
+  margin-bottom: 30px;
+  font-size: 1.8em;
+}
+
+.action-button {
+  color: #fff;
+  background: #f68121;
+  border: none;
+  box-shadow: 0 1px 0 1px #ff9e4d;
+  display: block;
+  position: relative;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.form-inline {
+  display: block;
+}
+
+.ans-email {
+  width: 80% !important;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  #offerwrapper #offers .box img {
+    margin: 0 auto;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+#offerwrapper h3 {
+  font-weight: 700;
+}
+
+#offerwrapper #offers .box {
+  border: 1px solid #ccc;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.a-button-stack .a-button:last-child {
+  margin-bottom: 0;
+}
+
+.a-button-stack .a-button {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.a-button-primary {
+  background: #f0c14b;
+  border-color: #a8a8a8 #9c9c9c #848484;
+  color: #fff;
+}
+
+.a-button-inner {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  height: 58px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+  border-radius: 2px;
+}
+
+.a-button-primary .a-button-inner {
+  background: #f3d078;
+  background: -webkit-linear-gradient(top, #f79d53, #f48123);
+  background: linear-gradient(to bottom, #f79d53, #f48123);
+}
+
+.a-button .a-button-inner {
+  background: #f68121;
+  background: -webkit-linear-gradient(top, #f79d53, #f48123);
+  background: linear-gradient(to bottom, #f79d53, #f48123);
+}
+
+.a-button-primary .a-button-text {
+  color: #fff;
+}
+
+.a-button-icon .a-button-text {
+  padding-left: 35px;
+  position: relative;
+  z-index: 10;
+}
+
+.a-button-text {
+  background-color: transparent;
+  border: 0;
+  display: block;
+  font-size: 26px;
+  line-height: 58px;
+  margin: 0;
+  outline: 0;
+  padding: 0 10px 0 11px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@media (min-width: 992px) {
+  .a-button-text {
+    font-size: 20px;
+  }
+}
+
+.a-button-dis-primary {
+  background: #b00000;
+  border-color: #a8a8a8 #9c9c9c #848484;
+  color: #fff;
+}
+
+.a-button-dis-primary .a-button-dis-inner {
+  background: #b00000;
+  background: -webkit-linear-gradient(top, #b00000, #900000);
+  background: linear-gradient(to bottom, #b00000, #900000);
+}
+
+.a-button .a-button-dis-inner {
+  background: #b00000;
+  background: -webkit-linear-gradient(top, #b00000, #900000);
+  background: linear-gradient(to bottom, #b00000, #900000);
+}
+
+.carousel-inner > .item > a > img,
+.carousel-inner > .item > img,
+.img-responsive,
+.thumbnail a > img,
+.thumbnail > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#offerwrapper #offers .box .offer-desc {
+  margin-left: -10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: 767px) {
+  #offerwrapper #offers .box .offer-desc {
+    margin-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+}
+
+#offerwrapper #offers .box span.offer-regular-price,
+#offerwrapper #offers .box span.offer-price-today,
+#offerwrapper #offers .box span.offer-quantity {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  #offerwrapper #offers .box .offer-desc {
+    margin-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  #offer-modal .modal-dialog {
+    width: 900px;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 900px;
+    margin: 1.75rem auto;
+  }
 }

@@ -1,4 +1,9 @@
 const unbranded = {
+    "theme": {
+        "primary": "#FF9932",
+        "shadow": "#957207",
+        "image": "unbranded"
+    },
     "title": "Unbranded",
     "questions": [
         {

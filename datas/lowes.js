@@ -1,4 +1,9 @@
 const lowes = {
+    "theme": {
+        "primary": "#004890",
+        "shadow": "#005EB9",
+        "image": "tools"
+    },
     "title": "Lowes",
     "questions": [
         {
@@ -129,7 +134,11 @@ const lowes = {
         },
         {
             "question": "Complete your information",
-            "answers": []
+            "email": true,
+            "answers": [
+                "Continue",
+                "Skip"
+            ]
         }
     ]
 }
