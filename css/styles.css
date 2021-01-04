@@ -1,0 +1,60 @@
+body {
+  background: url(../images/tools.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+}
+
+img.banner {
+  position: fixed;
+  top: 0;
+  width: 150px;
+  z-index: 999999999999;
+}
+
+@media all and (max-width: 500px) {
+  img.banner {
+    width: 100px;
+  }
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.modal .modal-body {
+  padding: 0;
+}
+
+.modal .content {
+  padding: 0px 20px 0px;
+}
+
+.modal .content h2 {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.modal .modal-footer {
+  text-align: center;
+  background: #232f3e;
+}
+
+.modal .modal-footer button {
+  width: 30%;
+  font-size: 18px;
+  color: #FFF;
+  background: #F68121;
+  border: none;
+  box-shadow: 0 1px 0 1px #FF9E4D;
+}
