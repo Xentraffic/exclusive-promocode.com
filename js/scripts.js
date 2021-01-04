@@ -148,7 +148,7 @@ function buildMainScreen(data) {
 function loadWall() {
     $.ajax({
         method: "GET",
-        url: "http://t5.elvergadura.com/aff_c",
+        url: "https://t5.elvergadura.com/aff_c",
         data: {
             offer_id: 667,
             aff_id: 1491
