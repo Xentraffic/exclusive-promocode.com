@@ -15,7 +15,8 @@ function initialLoad() {
     var data = window[$_GET("target") || "homedepot"];
 
 	buildMainScreen(data);
-    buildQuestionScreens(data);
+	buildQuestionScreens(data);
+	buildTermsHtml(data);
     setTheme(data.theme);
 
     $('#btn-accept').on('click', function(e){
@@ -325,6 +326,20 @@ function getCurrentDate() {
     var dayarray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
     var montharray = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")
     return "" + montharray[month] + " " + daym + ", " + year + ""
+}
+
+function buildTermsHtml(data) {
+	var termsMenuHtml = `
+		<center>
+			<a href="${data.terms_link}" style="color: #DDDDDD;">Terms and Conditions</a> | 
+			${data.title == "Online" ? "" : `<a href="mailto:surveyreactor@protonmail.ch?subject=Regarding Survey ${data.survey_id}" style="color: #DDDDDD;">Contact Us</a>`}
+		</center>
+	`;
+
+	$("#modal-dialog-question").append("<br></br>");
+	$("#modal-dialog-question").append(termsMenuHtml);
+	$("#modal-dialog-question").append("<br></br>");
+	$("#modal-dialog-question").append(data.terms);
 }
 
 $(document).ready(function () {
