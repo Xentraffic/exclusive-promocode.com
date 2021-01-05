@@ -4,7 +4,7 @@ const unbranded = {
         "shadow": "#957207",
         "image": "unbranded"
     },
-    "title": "Unbranded",
+    "title": "Online",
     "questions": [
         {
             "question": "Have you seen ads for online shopping?",

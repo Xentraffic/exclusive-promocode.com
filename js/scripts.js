@@ -14,9 +14,9 @@ function $_GET(key) {
 function initialLoad() {
     var data = window[$_GET("target") || "homedepot"];
 
-    setTheme(data.theme);
-    buildMainScreen(data);
+	buildMainScreen(data);
     buildQuestionScreens(data);
+    setTheme(data.theme);
 
     $('#btn-accept').on('click', function(e){
         e.preventDefault();
@@ -76,7 +76,7 @@ function buildQuestionScreens(data) {
     var questionForm = $("#questions");
     questionForm.append(`
         <div class="content">
-            <h2><b>Survey About:</b></h2>
+            ${data.title == "Online" ? "": "<h2><b>Survey About:</b></h2>"}
             <h1 style="margin-top:0px;">
                 <span style="color:${data.theme.primary}">${data.title}</span>
             </h1>
