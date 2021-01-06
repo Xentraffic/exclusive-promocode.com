@@ -2,7 +2,7 @@ var offer_tick = 0;
 var zz;
 
 $(function(){
-    loadWall()
+    initialLoad()
 });
 
 function $_GET(key) {
@@ -353,7 +353,7 @@ $(document).ready(function () {
 	});
 
 	$(".like").click(function() {
-		$(this).addClass("liked")
+		$(this).toggleClass("liked");
 	});
 
     // Set the date we're counting down to
