@@ -258,6 +258,10 @@ h1 {
   display: block;
 }
 
+#offer-modal {
+  overflow: scroll;
+}
+
 @media (max-width: 767px) {
   #offerwrapper #offers .box .offer-desc {
     margin-left: 0;
@@ -308,6 +312,10 @@ h1 {
 /*-- Global Selectors --*/
 .liked {
 	color: #47649F !important;
+}
+
+.modal-content-offer {
+  margin-top: 1rem;
 }
 
 .zzz a{

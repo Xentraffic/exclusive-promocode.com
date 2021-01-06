@@ -1,7 +1,9 @@
 var offer_tick = 0;
 var zz;
+var wall_data = [];
 
 $(function(){
+	loadWall()
     initialLoad()
 });
 
@@ -55,7 +57,7 @@ function initialLoad() {
 				return;
 			wall_loaded = true;
 			$('#sur-modal').modal('toggle');
-			loadWall();
+			buildOfferWall(wall_data);
 		}
 	});
 }
@@ -155,7 +157,7 @@ function loadWall() {
             aff_id: 1491
         },
         success: function(response) {
-            buildOfferWall(JSON.parse(response));
+            wall_data = JSON.parse(response);
         },
         error: function(err) {
             console.log(err);
