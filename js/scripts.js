@@ -344,6 +344,7 @@ function buildTermsHtml(data) {
 
 $(document).ready(function () {
 	$("#comment_box").on('keyup', function (e) {
+		e.preventDefault();
 		if (e.key === 'Enter' || e.keyCode === 13) {
 			$("#commentform .form-group").html("<div class='loader'></div>");
 			setTimeout(function() {

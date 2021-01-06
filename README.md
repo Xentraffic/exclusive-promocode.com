@@ -5,3 +5,4 @@ E-Commerce Surveys
 
 dimanche : 1h50
 Lundi: 3h00
+Mardi: 3h00
