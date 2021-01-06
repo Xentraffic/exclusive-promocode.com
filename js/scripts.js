@@ -2,7 +2,7 @@ var offer_tick = 0;
 var zz;
 
 $(function(){
-    initialLoad()
+    loadWall()
 });
 
 function $_GET(key) {
@@ -343,6 +343,19 @@ function buildTermsHtml(data) {
 }
 
 $(document).ready(function () {
+	$("#comment_box").on('keyup', function (e) {
+		if (e.key === 'Enter' || e.keyCode === 13) {
+			$("#commentform .form-group").html("<div class='loader'></div>");
+			setTimeout(function() {
+				$("#commentform .form-group").html("Thanks for your feedback!  Your comment is now in our moderation queue, and will appear shortly!");
+			}, 2500)
+		}
+	});
+
+	$(".like").click(function() {
+		$(this).addClass("liked")
+	});
+
     // Set the date we're counting down to
     var currentTime = Date.parse(new Date());
     var timeInMinutes = getRandomInt(6, 10);

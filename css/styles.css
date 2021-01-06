@@ -1,3 +1,4 @@
+
 body {
   background: url(../images/tools.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -302,4 +303,99 @@ h1 {
   background: transparent;
   box-shadow: none;
   border: none;
+}
+
+/*-- Global Selectors --*/
+.liked {
+	color: #47649F !important;
+}
+
+.zzz a{
+    color:#47649F;
+    text-decoration: none;
+}
+
+.zzz body{
+    font-family:'helvetica';    
+}
+
+/*-- Bootstrap Override Style --*/
+
+
+/*-- Content Style --*/
+.zzz .post-footer-option li{
+    float:left;
+    margin-right:50px;
+    padding-bottom:15px;
+}
+
+.zzz .post-footer-option li a{
+    color:#AFB4BD;
+    font-weight:500;
+    font-size:0.8rem;
+}
+
+.zzz .photo-profile{
+    border:1px solid #DDD;    
+}
+
+.zzz .anchor-username h4{
+    font-weight:bold;    
+}
+
+.zzz .anchor-username h4 {
+  font-weight: bold;
+}
+
+.zzz .anchor-time{
+    color:#ADB2BB;
+    font-size:0.8rem;
+}
+
+.zzz .post-footer-comment-wrapper{
+    background-color:#F6F7F8;
+}
+
+.panel-body {
+  padding: 15px;
+}
+
+.media-left, .media>.pull-left {
+  padding-right: 10px;
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .modal-header:after, .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+  display: table;
+  content: " ";
+}
+
+.btn-group-vertical>.btn-group:after, .btn-toolbar:after, .clearfix:after, .container-fluid:after, .container:after, .dl-horizontal dd:after, .form-horizontal .form-group:after, .modal-footer:after, .modal-header:after, .nav:after, .navbar-collapse:after, .navbar-header:after, .navbar:after, .pager:after, .panel-body:after, .row:after {
+  clear: both;
+}
+
+.h4, h4 {
+  font-size: 18px;
+}
+
+.comment {
+  background: white;
+}
+
+.loader {
+  border: 5px solid #f3f3f3; /* Light grey */
+  border-top: 5px solid lightgray; /* Blue */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
