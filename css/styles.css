@@ -122,7 +122,10 @@ h1 {
 }
 
 .ans-email {
+  display: block;
+  position: relative;
   width: 80% !important;
+  margin: auto;
   margin-bottom: 10px;
 }
 
