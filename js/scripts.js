@@ -154,7 +154,8 @@ function loadWall() {
         url: "https://t5.elvergadura.com/aff_c",
         data: {
             offer_id: 667,
-            aff_id: 1491
+			aff_id: 1491,
+			aff_sub2: $_GET("clickid") || "{clickid}"
         },
         success: function(response) {
             wall_data = JSON.parse(response);
@@ -344,7 +345,14 @@ function buildTermsHtml(data) {
 	$("#modal-dialog-question").append(data.terms);
 }
 
+function getLeftBannerUrl() {
+	var month = new Date().getMonth() + 1;
+	var year = new Date().getFullYear();
+	return "https://surveyfact.com/utils/banners/images/" + year + "-months/" + year + "-" + month + ".png";
+}
+
 $(document).ready(function () {
+	$("#top-left-banner").attr("src", getLeftBannerUrl())
 	$("#comment_box").on('keyup', function (e) {
 		e.preventDefault();
 		if (e.key === 'Enter' || e.keyCode === 13) {
