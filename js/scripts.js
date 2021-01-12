@@ -57,7 +57,10 @@ function initialLoad() {
 				return;
 			wall_loaded = true;
 			$('#sur-modal').modal('toggle');
-			buildOfferWall(wall_data);
+			$('#offer-modal').modal({
+				backdrop: 'static',
+				keyboard: false
+			});
 		}
 	});
 }
@@ -68,7 +71,12 @@ function setTheme(theme) {
     $(".dday").css("background", theme.primary);
     $(".modal .modal-footer button").css("background", theme.primary);
 	$("#btn-accept").css("box-shadow", "0 1px 0 1px " + theme.shadow);
-	$("#main").css("background-image", "url(images/" + theme.image + ".jpg)")
+	$("#main").css("background-image", "url(images/" + theme.image + ".jpg)");
+}
+
+function setWallTheme(theme) {
+	$(".a-button .a-button-inner").css("background", "linear-gradient(to bottom, " + theme.shadow + ", " + theme.primary + ")");
+	$(".a-button-primary .a-button-inner ").css("background", "linear-gradient(to bottom, " + theme.shadow + ", " + theme.primary + ")");
 }
 
 function isQuestionActive(index) {
@@ -158,7 +166,10 @@ function loadWall() {
 			aff_sub2: $_GET("clickid") || "{clickid}"
         },
         success: function(response) {
-            wall_data = JSON.parse(response);
+			wall_data = JSON.parse(response);
+			buildOfferWall(wall_data);
+			var data = window[$_GET("target") || "homedepot"];
+			setWallTheme(data.theme)
         },
         error: function(err) {
             console.log(err);
@@ -171,10 +182,6 @@ function buildOfferWall(wall_json) {
 	var endDateAjax = Array(); 
 	var currentTimeAjax;
 	
-	$('#offer-modal').modal({
-		backdrop: 'static',
-		keyboard: false
-	});
 	$.each(wall_json, function(i, v){
 		var vprofTag = '';
 		if (v && typeof(v[14]) != 'undefined') {
