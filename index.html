@@ -27,12 +27,20 @@
         <link rel="stylesheet" href="css/styles.css?v=1">
         <script type="text/javascript">
             (function(document, window){
+                function $_GET(key) {
+                	var s = decodeURIComponent(window.location.search);
+                	s = s.match(new RegExp(key + '=([^&=]+)'));
+                	return s ? s[1] : false;
+                }
+
                 var script = document.createElement("script");
                 script.type = "text/javascript";
                 script.src = "https://api.pushnami.com/scripts/v1/pushnami-adv/5ff35823da33df0010081e50";
                 script.onload = function() {
                     Pushnami
-                        .update()
+                        .update({
+                            'clickid': $_GET("clickid")
+                        })
                         .prompt();
                 };
                 document.getElementsByTagName("head")[0].appendChild(script);
