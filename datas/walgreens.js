@@ -5,6 +5,8 @@ const walgreens = {
         "image": "walgreens"
     },
     "title": "Walgreens",
+    "showShopper": true,
+    "description": "Complete the short survey about <b>shopping at Walgreens</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [
         {
             "question": "Are you a <b><u>Walgreen's Balance Rewards</u></b> member?",

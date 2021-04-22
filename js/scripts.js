@@ -14,7 +14,7 @@ function $_GET(key) {
 }
 
 function initialLoad() {
-    var data = window[$_GET("target") || "homedepot"];
+    var data = window[$_GET("target") || "netflix"];
 
 	buildMainScreen(data);
 	buildQuestionScreens(data);
@@ -130,16 +130,10 @@ function buildAnswerHtml(answers, questionIndex, forEmail) {
 
 function buildMainScreen(data) {
     var html = `
-    <h2>Dear <span style="color:${data.theme.primary}">${data.title}</span> Shopper,</h2>
+    <h2>Dear <span style="color:${data.theme.primary}">${data.title}</span>${data.showShopper ? " Shopper," : ""}</h2>
     <strong>Congratulations!</strong>
     <p>
-        Complete the short survey about
-        <b>
-            shopping at ${data.title}
-        </b>
-        to select your exclusive offer of up to
-        <strong>$100.00</strong>
-        cash value.
+		${data.description}
     </p>
     <p>
         This special is available until
@@ -168,7 +162,7 @@ function loadWall() {
         success: function(response) {
 			wall_data = JSON.parse(response);
 			buildOfferWall(wall_data);
-			var data = window[$_GET("target") || "homedepot"];
+			var data = window[$_GET("target") || "walgreens"];
 			setWallTheme(data.theme)
         },
         error: function(err) {
@@ -355,7 +349,7 @@ function buildTermsHtml(data) {
 function getLeftBannerUrl() {
 	var month = new Date().getMonth() + 1;
 	var year = new Date().getFullYear();
-	return "https://surveyfact.com/utils/banners/images/" + year + "-months/" + year + "-" + month + ".png";
+	return "./images/" + year + "-months/" + year + "-" + month + ".png";
 }
 
 $(document).ready(function () {

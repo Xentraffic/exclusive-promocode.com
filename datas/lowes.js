@@ -5,6 +5,8 @@ const lowes = {
         "image": "tools"
     },
     "title": "Lowes",
+    "showShopper": true,
+    "description": "Complete the short survey about <b>shopping at Lowes</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [
         {
             "question": "Thinking about your last purchase at Lowes, was it primarily to buy...",

@@ -5,6 +5,8 @@ const unbranded = {
         "image": "unbranded"
     },
     "title": "Online",
+    "showShopper": true,
+    "description": "Complete the short survey about <b>shopping Online</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [
         {
             "question": "Have you seen ads for online shopping?",
