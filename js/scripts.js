@@ -130,7 +130,7 @@ function buildAnswerHtml(answers, questionIndex, forEmail) {
 
 function buildMainScreen(data) {
     var html = `
-    <h2>Dear <span style="color:${data.theme.primary}">${data.title}</span>${data.showShopper ? " Shopper," : ""}</h2>
+    <h2>Dear <span style="color:${data.theme.primary}">${data.title}</span>${data.showShopper ? " Shopper," : ","}</h2>
     <strong>Congratulations!</strong>
     <p>
 		${data.description}
