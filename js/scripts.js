@@ -15,7 +15,7 @@ function $_GET(key) {
 }
 
 function initialLoad() {
-	data = window[$_GET("target") || "test"];
+	data = window[$_GET("target") || "netflix"];
 
 	if (data["includePushNotif"]) {
 		var script = document.createElement("script");
