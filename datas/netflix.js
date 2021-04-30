@@ -5,6 +5,7 @@ const netflix = {
         "image": "movie"
     },
     "title": "Netflix User",
+    "includePushNotif": true,
     "showShopper": false,
     "description": "Complete a short survey about <b>Netflix</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

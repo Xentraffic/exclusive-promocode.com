@@ -5,6 +5,7 @@ const dollartree = {
         "image": "walmart"
     },
     "title": "Dollar Tree",
+    "includePushNotif": true,
     "showShopper": true,
     "description": "Complete the short survey about <b>shopping at Dollar Tree</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

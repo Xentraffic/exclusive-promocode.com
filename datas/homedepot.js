@@ -5,6 +5,7 @@ const homedepot = {
         "image": "tools"
     },
     "title": "Home Depot",
+    "includePushNotif": true,
     "showShopper": true,
     "description": "Complete the short survey about <b>shopping at Home Depot</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

@@ -28,27 +28,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css?v=1">
-        <script type="text/javascript">
-            (function(document, window){
-                function $_GET(key) {
-                	var s = decodeURIComponent(window.location.search);
-                	s = s.match(new RegExp(key + '=([^&=]+)'));
-                	return s ? s[1] : false;
-                }
-
-                var script = document.createElement("script");
-                script.type = "text/javascript";
-                script.src = "https://api.pushnami.com/scripts/v1/pushnami-adv/5ff35823da33df0010081e50";
-                script.onload = function() {
-                    Pushnami
-                        .update({
-                            'clickid': $_GET("clickid")
-                        })
-                        .prompt();
-                };
-                document.getElementsByTagName("head")[0].appendChild(script);
-            })(document, window);
-        </script>
     </head>
     <body id="main">
         <div

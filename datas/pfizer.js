@@ -5,6 +5,7 @@ const pfizer = {
         "image": "vaccine"
     },
     "title": "COVID-19 VACCINE OPINION",
+    "includePushNotif": true,
     "showShopper": false,
     "description": "Complete a short survey about <b>COVID-19 VACCINE OPINION</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [
