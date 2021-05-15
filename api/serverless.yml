@@ -1,0 +1,21 @@
+service: EXCLUSIVE-PROMO-EMAIL-SERVICE
+
+provider:
+  name: aws
+  runtime: python3.7
+  stage: PROD
+  region: us-east-1
+  lambdaHashingVersion: 20201221
+  profile: xentraffic
+
+functions:
+  SUBSCRIBE:
+    handler: email_service/lambda_function.handler
+    memorySize: 128
+    description: Subscribe user's email to EmailNami.
+    events:
+      - http: 
+          path: subscribe
+          method: post
+          cors:
+             origin: 'https://exclusive-promocode.com'
