@@ -161,10 +161,10 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/EXCLUSIVE-PROMO-EMAIL-SERVICE/PROD/1621090395073-2021-05-15T14:53:15.073Z/EXCLUSIVE-PROMO-EMAIL-SERVICE.zip"
+          "S3Key": "serverless/EXCLUSIVE-PROMO-EMAIL-SERVICE/PROD/1629771363245-2021-08-24T02:16:03.245Z/EXCLUSIVE-PROMO-EMAIL-SERVICE.zip"
         },
         "Handler": "email_service/lambda_function.handler",
-        "Runtime": "python3.7",
+        "Runtime": "python3.8",
         "FunctionName": "EXCLUSIVE-PROMO-EMAIL-SERVICE-PROD-SUBSCRIBE",
         "MemorySize": 128,
         "Timeout": 6,
@@ -180,14 +180,14 @@
         "SUBSCRIBELogGroup"
       ]
     },
-    "SUBSCRIBELambdaVersionK9YTdAsp1OcrIfbvCMWFPiDXj81cPrhDNal75n3TWMs": {
+    "SUBSCRIBELambdaVersionkZIl6hOVRHBriuuhJ37gmGMfTjaJZqyTaOR268dxTM": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "SUBSCRIBELambdaFunction"
         },
-        "CodeSha256": "12xXtj6ywcU90QevLAmQRQHl7/m0XEcsnoZyaTR1t0g=",
+        "CodeSha256": "9Q8ZrM04PRJHWCwiY3CiAnxCaS98UCx5lAmK9bTW8QQ=",
         "Description": "Subscribe user's email to EmailNami."
       }
     },
@@ -304,9 +304,12 @@
           }
         },
         "MethodResponses": []
-      }
+      },
+      "DependsOn": [
+        "SUBSCRIBELambdaPermissionApiGateway"
+      ]
     },
-    "ApiGatewayDeployment1621090394092": {
+    "ApiGatewayDeployment1629771360679": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -369,7 +372,7 @@
     "SUBSCRIBELambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "SUBSCRIBELambdaVersionK9YTdAsp1OcrIfbvCMWFPiDXj81cPrhDNal75n3TWMs"
+        "Ref": "SUBSCRIBELambdaVersionkZIl6hOVRHBriuuhJ37gmGMfTjaJZqyTaOR268dxTM"
       },
       "Export": {
         "Name": "sls-EXCLUSIVE-PROMO-EMAIL-SERVICE-PROD-SUBSCRIBELambdaFunctionQualifiedArn"

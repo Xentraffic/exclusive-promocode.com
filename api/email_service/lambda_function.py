@@ -1,45 +1,71 @@
+try:
+  import unzip_requirements
+except ImportError:
+  pass
+
 import json
-import requests
-from datetime import datetime
+import urllib.parse
+import re
 
+from mailchimp3 import MailChimp
+
+LIST_ID = '8da1ffa334'
 WEBSITE_BASE_URL = "https://exclusive-promocode.com"
-EMAIL_SUB_API_URL = "https://api.pushnami.com/api/email/subscribe"
 
-def handler(event, context):
-    body = json.loads(event.get("body"))
-    email = body.get("email")
-    registration_url = body.get("registration_url")
+mailchimp_client = MailChimp(
+    mc_api='a0440e29b1e78a2f4ff64d53fcdd6eb7-us2', 
+    mc_user='xentraffic'
+)
 
-    if not email or not registration_url:
-        return not_invalid_body_response()
-
-    res = requests.post(
-        url=EMAIL_SUB_API_URL,
-        json={
-            "key": "", #TODO GET
-            "email": email,
-            "registrationUrl": registration_url,
-            "timestamp": datetime.now().isoformat()
-        }
-    )
-
-    if res.ok:
-        response_content = res.json()
-        subscribedEmail = response_content.get("subscriberEmail")
-        subscribedId = response_content.get("subscriberId")
-        return {
-            "success": True
-        }
+def handler(event, context):  
+    body = event.get("body") or ""
+    body_elements = body.split("=")
+    email = None
     
-    return internal_server_error_response()
+    if len(body_elements) > 1:
+        email = urllib.parse.unquote(body_elements[1])
+        
+    try:
+        if not email:
+            return not_invalid_body_response()
+
+        if check_email(email):
+            return not_invalid_body_response("Invalid email")   
+
+        resp = mailchimp_client.lists.members.create(LIST_ID, {
+            'email_address': email,
+            'status': 'subscribed'
+        })
+
+        if 'id' in resp:
+            return success_response()
+
+        return internal_server_error_response()
+    except Exception as e:
+        return internal_server_error_response()
+
+def check_email(email):
+    if(re.fullmatch(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b', email)):
+        return True
+    else:
+        return False
+
+def success_response():
+    return {
+        "statusCode": 200,
+        "headers": response_headers(),
+        "body": json.dumps({
+            "success": True
+        })
+    }
 
 
-def not_invalid_body_response():
+def not_invalid_body_response(msg="Invalid body"):
     return {
         "statusCode": 400,
         "headers": response_headers(),
         "body": json.dumps({
-            "errorMessage": "Invalid body"
+            "errorMessage": msg
         })
     }
 
@@ -58,4 +84,5 @@ def response_headers():
     return {
       'Access-Control-Allow-Origin': WEBSITE_BASE_URL,
       'Access-Control-Allow-Credentials': True,
-    },
+      'Content-Type': 'application/json'
+    }

@@ -2,11 +2,14 @@ service: EXCLUSIVE-PROMO-EMAIL-SERVICE
 
 provider:
   name: aws
-  runtime: python3.7
+  runtime: python3.8
   stage: PROD
   region: us-east-1
   lambdaHashingVersion: 20201221
   profile: xentraffic
+custom:
+  pythonRequirements:
+    zip: true
 
 functions:
   SUBSCRIBE:
@@ -18,4 +21,12 @@ functions:
           path: subscribe
           method: post
           cors:
-             origin: 'https://exclusive-promocode.com'
+            origin: 'https://exclusive-promocode.com'
+    package:
+      patterns:
+        - '!node_modules/**'
+        - '!venv/**'
+        - '!package.json'
+        - '!package-lock.json'
+plugins:
+  - serverless-python-requirements

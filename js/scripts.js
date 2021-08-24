@@ -123,24 +123,74 @@ function buildQuestionScreens(data) {
                 </div>
             </div>
         `);
-	})
+	});
+	$("#email-error").hide();
+	$("#email-success").hide();
 }
 
 function buildAnswerHtml(answers, questionIndex, forEmail) {
 	var answerHtml = "";
 	if (forEmail) {
 		answerHtml += `
+			<div id="email-error"></div>
+			<div id="email-success">Success</div>
             <input class="form-control ans-email" id="email" name="email" placeholder="Enter email" type="email" autocorrect="off" autocapitalize="off" value="">
         `
-	}
-	answers.forEach(function (answerValue, index) {
 		answerHtml += `
-            <button name="q${questionIndex}" onclick="$('#radio-q-${questionIndex}').attr('checked',true);" class="btn btn-default action-button q${questionIndex}-radio" type="button">
-                ${answerValue}
-            </button>
-        `
-	});
+			<button name="q${questionIndex}" onclick="subscribe('#radio-q-${questionIndex}', true);" class="btn btn-default action-button q${questionIndex}-radio" type="button">
+				Continue
+			</button>
+			<button name="q${questionIndex}" onclick="subscribe('#radio-q-${questionIndex}', false);" class="btn btn-default action-button q${questionIndex}-radio" type="button">
+				Skip
+			</button>
+		`
+	} else {
+		answers.forEach(function (answerValue, index) {
+			answerHtml += `
+				<button name="q${questionIndex}" onclick="$('#radio-q-${questionIndex}').attr('checked',true);" class="btn btn-default action-button q${questionIndex}-radio" type="button">
+					${answerValue}
+				</button>
+			`
+		});
+	}
 	return answerHtml;
+}
+
+function subscribe(id, subscribe) {
+	$("#email-error").hide();
+	$("#email-success").hide();
+
+	if (subscribe) {
+		var email = $("#email").val();
+
+		if (validateEmail(email)) {
+			$.ajax({
+				url: "https://1o82afhqg8.execute-api.us-east-1.amazonaws.com/PROD/subscribe", 
+				method: "POST",
+				data: {
+					email: email
+				},
+				contentType: "application/json",
+				dataType: "json",
+				success: function(result){
+					console.log("success")
+				},
+				error: function(err) {
+					$("#email-error").text("Error");
+				}
+			});
+		} else {
+			$("#email-error").text("Invalid email");
+			$("#email-error").show();
+		}
+	}
+
+	$(id).attr('checked',true);
+}
+
+function validateEmail(email) {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
 }
 
 function buildMainScreen(data) {

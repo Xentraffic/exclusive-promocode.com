@@ -109,6 +109,10 @@ const netflix = {
                 "No",
                 "Not Sure"
             ]
+        },
+        {
+            "question": "Complete your information",
+            "email": true
         }
     ],
     "survey_id": "#wb74rpmabnu3t1j4i4soldl0",
