@@ -6,5 +6,8 @@
 - `exclusive-promocode.com/brazzers-ultra-4k/`
 - `exclusive-promocode.com/brazzers/`
 
+#### Deployement
+- run: `sh deploy_brazzer.sh`
+
 ### Surveys Landing go inside:
 - `exclusive-promocode.com/surveys/`
