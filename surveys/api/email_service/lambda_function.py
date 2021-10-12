@@ -19,12 +19,11 @@ mailchimp_client = MailChimp(
 
 def handler(event, context):  
     body = event.get("body") or ""
-    body_elements = body.split("=")
-    email = None
-    
-    if len(body_elements) > 1:
-        email = urllib.parse.unquote(body_elements[1])
+    query_string = parse_query_string(body)
         
+    email = query_string.get("email")
+    source = query_string.get("source", "UNKNOWN")
+    
     try:
         if not email:
             return not_invalid_body_response()
@@ -34,7 +33,10 @@ def handler(event, context):
 
         resp = mailchimp_client.lists.members.create(LIST_ID, {
             'email_address': email,
-            'status': 'subscribed'
+            'status': 'subscribed',
+            'merge_fields': {
+                'SOURCE': source
+            },
         })
 
         if 'id' in resp:
@@ -43,6 +45,14 @@ def handler(event, context):
         return internal_server_error_response()
     except Exception as e:
         return internal_server_error_response()
+
+def parse_query_string(qs):
+    qs_elements = qs.split("&")
+    query_params = {}
+    for qs_element in qs_elements:
+        key_value = qs_element.split("=")
+        query_params[key_value[0]] = urllib.parse.unquote(key_value[1])
+    return query_params
 
 def check_email(email):
     if(re.fullmatch(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b', email)):

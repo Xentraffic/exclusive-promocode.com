@@ -2,6 +2,7 @@ var offer_tick = 0;
 var zz;
 var wall_data = [];
 var data = {};
+var source = "";
 
 $(function () {
 	loadWall()
@@ -15,7 +16,8 @@ function $_GET(key) {
 }
 
 function initialLoad() {
-	data = window[$_GET("target") || "netflix"];
+	source = $_GET("target") || "netflix"
+	data = window[source];
 
 	if (data["includePushNotif"]) {
 		var script = document.createElement("script");
@@ -168,7 +170,8 @@ function subscribe(id, subscribe) {
 				url: "https://1o82afhqg8.execute-api.us-east-1.amazonaws.com/PROD/subscribe", 
 				method: "POST",
 				data: {
-					email: email
+					email: email,
+					source: source
 				},
 				contentType: "application/json",
 				dataType: "json",
