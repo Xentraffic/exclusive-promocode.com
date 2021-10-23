@@ -2,11 +2,10 @@ const dollartree = {
     "theme": {
         "primary": "#007f3a",
         "shadow": "#59ba29",
-        "image": "walmart"
+        "image": "dollartree"
     },
-    "title": "Dollar Tree",
+    "title": "Dear Dollar Tree Shopper",
     "includePushNotif": true,
-    "showShopper": true,
     "description": "Complete the short survey about <b>shopping at Dollar Tree</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [
         {

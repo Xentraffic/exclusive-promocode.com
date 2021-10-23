@@ -4,10 +4,9 @@ const unbranded = {
         "shadow": "#957207",
         "image": "unbranded"
     },
-    "title": "Online",
+    "title": "Dear Online Shopper",
     "includePushNotif": true,
-    "showShopper": true,
-    "description": "Complete the short survey about <b>shopping Online</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
+    "description": "Complete the short survey about <b>shopping Online</b> to select your exclusive offer",
     "questions": [
         {
             "question": "Have you seen ads for online shopping?",
@@ -117,6 +116,14 @@ const unbranded = {
                 "Male",
                 "Female",
                 "Other"
+            ]
+        },
+        {
+            "question": "Enter your email to receive special offers from Exclusive-Promocode",
+            "email": true,
+            "answers": [
+                "Continue",
+                "Skip"
             ]
         }
     ],

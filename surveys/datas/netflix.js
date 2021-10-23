@@ -4,11 +4,18 @@ const netflix = {
         "shadow": "#141414",
         "image": "movie"
     },
-    "title": "Netflix User",
+    "title": "Dear Netflix User",
     "includePushNotif": true,
-    "showShopper": false,
     "description": "Complete a short survey about <b>Netflix</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [
+        {
+            "question": "Are you currently a Netflix subscriber?",
+            "answers": [
+                "Yes",
+                "No",
+                "Prefer Not To Answer"
+            ]
+        },
         {
             "question": "Are you currently a Netflix subscriber?",
             "answers": [
@@ -112,7 +119,11 @@ const netflix = {
         },
         {
             "question": "Complete your information",
-            "email": true
+            "email": true,
+            "answers": [
+                "Continue",
+                "Skip"
+            ]
         }
     ],
     "survey_id": "#wb74rpmabnu3t1j4i4soldl0",
