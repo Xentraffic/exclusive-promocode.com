@@ -11,3 +11,41 @@
 
 ### Surveys Landing go inside:
 - `exclusive-promocode.com/surveys/`
+
+## Type of questions format
+
+### Regular Question
+
+```json
+{
+    "question": "Are you currently a Netflix subscriber?",
+    "answers": [
+        "Yes",
+        "No",
+        "Prefer Not To Answer"
+    ]
+}
+```
+
+### Email Question (Always the last one and only once in a survey)
+
+```json
+{
+    "question": "Complete your information",
+    "email": true,
+    "answers": [
+        "Continue",
+        "Skip"
+    ]
+}
+```
+
+### Yes no question with redirect when clicking on Yes
+
+```json
+{
+    "question": "Are you currently a Netflix subscriber?",
+    "yesNoRedirect": true,
+    "redirectUrl": "https://google.com"
+}
+```
