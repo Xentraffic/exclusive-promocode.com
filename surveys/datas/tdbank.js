@@ -4,7 +4,7 @@ const tdbank = {
         "shadow": "#54B848",
         "image": "tdbank"
     },
-    "title": "Dear TD Bank User",
+    "title": "TD Bank User",
     "includePushNotif": true,
     "description": "Complete the short survey about <b>TD Bank</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

@@ -4,7 +4,7 @@ const ikea = {
         "shadow": "#0468B3",
         "image": "ikea"
     },
-    "title": "Dear IKEA Shopper",
+    "title": "IKEA Shopper",
     "includePushNotif": true,
     "description": "Complete the short survey about <b>shopping at IKEA</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

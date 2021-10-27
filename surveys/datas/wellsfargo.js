@@ -4,7 +4,7 @@ const wellsfargo = {
         "shadow": "#cd1409",
         "image": "wellsfargo"
     },
-    "title": "Dear Wells Fargo User Shopper",
+    "title": "Wells Fargo User Shopper",
     "includePushNotif": true,
     "description": "Complete a short survey about <b>Wells Fargo</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

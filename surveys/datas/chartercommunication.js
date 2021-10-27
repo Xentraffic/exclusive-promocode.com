@@ -4,7 +4,7 @@ const chartercommunication = {
         "shadow": "#00629B",
         "image": "chartercommunication"
     },
-    "title": "Dear Charter Communications Subscriber",
+    "title": "Charter Communications Subscriber",
     "includePushNotif": true,
     "description": "Complete a short survey about <b>Charter Communications</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

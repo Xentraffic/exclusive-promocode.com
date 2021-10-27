@@ -4,7 +4,7 @@ const dicksportingood = {
         "shadow": "#15705E",
         "image": "dicksportingood"
     },
-    "title": "Dear Dick's Sporting Goods Shopper",
+    "title": "Dick's Sporting Goods Shopper",
     "includePushNotif": true,
     "description": "Complete the short survey about <b>shopping at Dick's Sporting Goods</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

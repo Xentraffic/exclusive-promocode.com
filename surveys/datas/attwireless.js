@@ -4,7 +4,7 @@ const attwireless = {
         "shadow": "#00A8E0",
         "image": "attwireless"
     },
-    "title": "Dear AT&T Subscriber",
+    "title": "AT&T Subscriber",
     "includePushNotif": true,
     "description": "Complete a short survey about <b>AT&T</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

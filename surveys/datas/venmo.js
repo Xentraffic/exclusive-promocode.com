@@ -4,7 +4,7 @@ const venmo = {
         "shadow": "#3D95CE",
         "image": "venmo"
     },
-    "title": "Dear Venmo Shopper",
+    "title": "Venmo Shopper",
     "includePushNotif": true,
     "description": "Complete the short survey about <b>shopping at Venmo</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

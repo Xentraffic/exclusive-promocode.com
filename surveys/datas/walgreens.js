@@ -4,7 +4,7 @@ const walgreens = {
         "shadow": "#e52f4b",
         "image": "walgreens"
     },
-    "title": "Dear Walgreens Shopper",
+    "title": "Walgreens Shopper",
     "includePushNotif": true,
     "description": "Complete the short survey about <b>shopping at Walgreens</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

@@ -4,7 +4,7 @@ const apple = {
         "shadow": "#ff3b30",
         "image": "apple"
     },
-    "title": "Dear Apple Shopper",
+    "title": "Apple Shopper",
     "includePushNotif": true,
     "description": "Complete the short survey about Apple to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

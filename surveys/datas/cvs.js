@@ -4,7 +4,7 @@ const cvs = {
         "shadow": "#da1a00",
         "image": "cvs"
     },
-    "title": "Dear CVS Shopper",
+    "title": "CVS Shopper",
     "includePushNotif": true,
     "description": "Complete the short survey about <b>shopping at CVS</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

@@ -4,7 +4,7 @@ const oldnavy = {
         "shadow": "#2f364a",
         "image": "oldnavy"
     },
-    "title": "Dear Old Navy Shopper",
+    "title": "Old Navy Shopper",
     "includePushNotif": true,
     "description": "Complete a short survey about <b>Old Navy</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

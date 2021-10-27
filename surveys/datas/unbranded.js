@@ -4,7 +4,7 @@ const unbranded = {
         "shadow": "#957207",
         "image": "unbranded"
     },
-    "title": "Dear Online Shopper",
+    "title": "Online Shopper",
     "includePushNotif": true,
     "description": "Complete the short survey about <b>shopping Online</b> to select your exclusive offer",
     "questions": [

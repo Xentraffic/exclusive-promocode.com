@@ -4,7 +4,7 @@ const doordash = {
         "shadow": "#FF3008",
         "image": "doordash"
     },
-    "title": "Dear DoorDash User",
+    "title": "DoorDash User",
     "includePushNotif": true,
     "description": "Complete the short survey about <b>shopping at DoorDash</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

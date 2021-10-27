@@ -4,7 +4,7 @@ const costco = {
         "shadow": "#0078d8",
         "image": "costco"
     },
-    "title": "Dear Costco Shopper",
+    "title": "Costco Shopper",
     "includePushNotif": true,
     "description": "Complete the short survey about <b>shopping at Costco</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

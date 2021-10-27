@@ -4,7 +4,7 @@ const sears = {
         "shadow": "#002F9C",
         "image": "sears"
     },
-    "title": "Dear Sears Shopper",
+    "title": "Sears Shopper",
     "includePushNotif": true,
     "description": "Complete the short survey about <b>shopping at Sears</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

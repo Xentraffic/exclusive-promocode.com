@@ -4,7 +4,7 @@ const riteaid = {
         "shadow": "#004D9B",
         "image": "riteaid"
     },
-    "title": "Dear Rite Aid Shopper",
+    "title": "Rite Aid Shopper",
     "includePushNotif": true,
     "description": "Complete the short survey about <b>Rite Aid</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

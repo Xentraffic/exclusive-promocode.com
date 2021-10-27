@@ -4,7 +4,7 @@ const healthmartpharmacy = {
         "shadow": "#004D9B",
         "image": "healthmartpharmacy"
     },
-    "title": "Dear Health Mart PHARMACY Shopper",
+    "title": "Health Mart PHARMACY Shopper",
     "includePushNotif": true,
     "description": "Complete the short survey about <b>Health Mart PHARMACY</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

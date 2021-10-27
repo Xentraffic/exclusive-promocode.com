@@ -4,7 +4,7 @@ const pizzahut = {
         "shadow": "#EE3A43",
         "image": "pizzahut"
     },
-    "title": "Dear Pizza Hut Shopper",
+    "title": "Pizza Hut Shopper",
     "includePushNotif": true,
     "description": "Complete the short survey about <b>Pizza Hut</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

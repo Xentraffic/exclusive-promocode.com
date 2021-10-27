@@ -4,7 +4,7 @@ const cryptocurrency = {
         "shadow": "#ff9932",
         "image": "cryptocurrency"
     },
-    "title": "Dear Cryptocurrency Visitor",
+    "title": "Cryptocurrency Visitor",
     "includePushNotif": true,
     "description": "Complete a short survey about <b>Cryptocurrency</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

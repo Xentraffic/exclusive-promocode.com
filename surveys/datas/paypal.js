@@ -4,7 +4,7 @@ const paypal = {
         "shadow": "#00457C",
         "image": "paypal"
     },
-    "title": "Dear PayPal User",
+    "title": "PayPal User",
     "includePushNotif": true,
     "description": "Complete the short survey about PayPal to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

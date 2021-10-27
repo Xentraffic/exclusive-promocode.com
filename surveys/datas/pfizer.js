@@ -4,7 +4,7 @@ const pfizer = {
         "shadow": "#cc0000",
         "image": "vaccine"
     },
-    "title": "Dear Viral Immunity Subject",
+    "title": "Viral Immunity Subject",
     "includePushNotif": true,
     "description": "Complete a short survey about <b>Viral Immunity</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

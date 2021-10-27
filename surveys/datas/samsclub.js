@@ -4,7 +4,7 @@ const samsclub = {
         "shadow": "#004b8d",
         "image": "samsclub"
     },
-    "title": "Dear Sam's Club Shopper",
+    "title": "Sam's Club Shopper",
     "includePushNotif": true,
     "description": "Complete the short survey about <b>shopping at Sam's Club</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

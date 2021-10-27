@@ -4,7 +4,7 @@ const victoriasecret = {
         "shadow": "#ffb3cb",
         "image": "victoriasecret"
     },
-    "title": "Dear Victoria's Secret Shopper",
+    "title": "Victoria's Secret Shopper",
     "includePushNotif": true,
     "description": "Complete the short survey about <b>shopping at Victoria's Secret</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

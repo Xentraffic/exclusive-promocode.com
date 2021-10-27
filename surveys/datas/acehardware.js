@@ -4,7 +4,7 @@ const acehardware = {
         "shadow": "#cc0000",
         "image": "acehardware"
     },
-    "title": "Dear Ace Hardware Shopper",
+    "title": "Ace Hardware Shopper",
     "includePushNotif": true,
     "description": "Complete the short survey about <b>shopping at Ace Hardware</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

@@ -4,7 +4,7 @@ const kroger = {
         "shadow": "#0468b3",
         "image": "kroger"
     },
-    "title": "Dear Kroger Shopper",
+    "title": "Kroger Shopper",
     "includePushNotif": true,
     "description": "Complete the short survey about <b>shopping at Kroger</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

@@ -4,7 +4,7 @@ const homedepot_np = {
         "shadow": "#ff9e4d",
         "image": "tools"
     },
-    "title": "Dear Home Depot Shopper",
+    "title": "Home Depot Shopper",
     "includePushNotif": false,
     "description": "Complete the short survey about <b>shopping at Home Depot</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

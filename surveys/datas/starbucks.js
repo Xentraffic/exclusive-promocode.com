@@ -4,7 +4,7 @@ const starbucks = {
         "shadow": "#00704A",
         "image": "starbucks"
     },
-    "title": "Dear Starbucks Shopper",
+    "title": "Starbucks Shopper",
     "includePushNotif": false,
     "description": "Complete the short survey about <b>Starbucks</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

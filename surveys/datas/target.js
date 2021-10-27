@@ -4,7 +4,7 @@ const target = {
         "shadow": "#CC0000",
         "image": "target"
     },
-    "title": "Dear Target Shopper",
+    "title": "Target Shopper",
     "includePushNotif": true,
     "description": "Complete the short survey about <b>shopping at Target</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

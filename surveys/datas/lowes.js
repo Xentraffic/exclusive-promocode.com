@@ -4,7 +4,7 @@ const lowes = {
         "shadow": "#005EB9",
         "image": "tools"
     },
-    "title": "Dear Lowes Shopper",
+    "title": "Lowes Shopper",
     "includePushNotif": true,
     "description": "Complete the short survey about <b>shopping at Lowes</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

@@ -4,7 +4,7 @@ const kohls = {
         "shadow": "#800033",
         "image": "kohls"
     },
-    "title": "Dear Kohl's Shopper",
+    "title": "Kohl's Shopper",
     "includePushNotif": true,
     "description": "Complete the short survey about <b>shopping at Kohl's</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

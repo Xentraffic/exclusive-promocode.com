@@ -4,7 +4,7 @@ const walmart = {
         "shadow": "#0078d8",
         "image": "walmart"
     },
-    "title": "Dear Walmart Shopper",
+    "title": "Walmart Shopper",
     "includePushNotif": true,
     "description": "Complete the short survey about <b>shopping at Walmart</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

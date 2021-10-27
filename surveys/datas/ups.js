@@ -4,7 +4,7 @@ const ups = {
         "shadow": "#FFB500",
         "image": "ups"
     },
-    "title": "Dear UPS User",
+    "title": "UPS User",
     "includePushNotif": true,
     "description": "Complete a short survey about <b>UPS</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

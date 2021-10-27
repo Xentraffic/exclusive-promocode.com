@@ -224,7 +224,7 @@ function validateEmail(email) {
 
 function buildMainScreen(data) {
   var html = `
-    <h2>${data.title}</h2>
+    <h2>Dear ${data.title}</h2>
     <strong>Congratulations!</strong>
     <p>
 		${data.description}

@@ -4,7 +4,7 @@ const bestbuy = {
         "shadow": "#0A4ABF",
         "image": "bestbuy"
     },
-    "title": "Dear Best Buy Shopper",
+    "title": "Best Buy Shopper",
     "includePushNotif": true,
     "description": "Complete the short survey about <b>shopping at Best Buy</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

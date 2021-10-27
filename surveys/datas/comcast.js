@@ -4,7 +4,7 @@ const comcast = {
         "shadow": "#00629B",
         "image": "comcast"
     },
-    "title": "Dear Comcast Subscriber",
+    "title": "Comcast Subscriber",
     "includePushNotif": true,
     "description": "Complete a short survey about <b>Comcast</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

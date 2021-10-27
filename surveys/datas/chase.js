@@ -4,7 +4,7 @@ const chase = {
         "shadow": "#117ACA",
         "image": "chase"
     },
-    "title": "Dear Chase User",
+    "title": "Chase User",
     "includePushNotif": true,
     "description": "Complete a short survey about <b>Chase</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [

@@ -4,7 +4,7 @@ const blacklivesmatter = {
         "shadow": "#E6B120",
         "image": "blacklivesmatter"
     },
-    "title": "Dear Black Lives Matter Subject",
+    "title": "Black Lives Matter Subject",
     "includePushNotif": true,
     "description": "Complete a short survey about <b>Black Lives Matter</b> to select your exclusive offer of up to <strong>$100.00</strong> cash value.",
     "questions": [
