@@ -108,7 +108,7 @@ function buildQuestionScreens(data) {
   var questionForm = $("#questions");
   questionForm.append(`
         <div class="content">
-            ${data.title == "Online" ? "" : "<h2><b>Survey About:</b></h2>"}
+            ${data.title == "Online" ? "" : "<h2><b>FEATURED OFFERS:</b></h2>"}
             <h1 style="margin-top:0px;">
                 <span style="color:${data.theme.primary}">${data.title}</span>
             </h1>
@@ -122,7 +122,7 @@ function buildQuestionScreens(data) {
   data.questions.forEach(function (data, index) {
     var questionIndex = index + 1;
     questionForm.append(`
-            <div data-count="${questionIndex}" class="question text-center ${isQuestionActive(questionIndex)}">
+            <div data-count="${questionIndex}" style="padding: 0 24px;" class="question text-center ${isQuestionActive(questionIndex)}">
                 <div class="q-count">Question: ${questionIndex} of ${questionCount}</div>
                 <p class="q">${data.question}</p>
                 <div class="form-inline">
@@ -144,9 +144,9 @@ function buildAnswerHtml(questionIndex, data) {
   if (isForYesNoRedirect) {
     var redirectUrl = "redirectUrl" in data ? data.redirectUrl : "#";
     answerHtml += `
-		<button name="q${questionIndex}" onclick="redirect('${redirectUrl}')" class="btn btn-default action-button q${questionIndex}-radio" type="button">
+		<a name="q${questionIndex}" href="${redirectUrl}" target="_blank" class="btn btn-default action-button q${questionIndex}-radio" type="button">
 			Yes
-		</button>
+		</a>
 		<button name="q${questionIndex}" onclick="$('#radio-q-${questionIndex}').attr('checked',true);" class="btn btn-default action-button q${questionIndex}-radio" type="button">
 			No
 		</button>
