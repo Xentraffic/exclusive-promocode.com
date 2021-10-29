@@ -39,10 +39,7 @@ def handler(event, context):
             },
         })
 
-        if 'id' in resp:
-            return success_response()
-
-        return internal_server_error_response()
+        return success_response()
     except Exception as e:
         return internal_server_error_response()
 
