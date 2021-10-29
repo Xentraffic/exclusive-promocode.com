@@ -23,7 +23,7 @@ function subscribe() {
       dataType: "json",
       success: function (result) {
         $("#success-msg").show();
-        $("#success-msg").text("You were subscribe successfully!");
+        $("#success-msg").text("You have been successfully subscribed!");
 
         setTimeout(() => {
           window.location.href =
