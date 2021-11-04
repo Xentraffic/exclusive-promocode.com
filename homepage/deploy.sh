@@ -1,4 +1,3 @@
-nvm use 14
 npm run build
 mkdir dist
 cp -r homepage_files dist/
