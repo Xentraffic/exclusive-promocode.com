@@ -1,0 +1,1 @@
+aws s3 sync dist s3://exclusive-promocode.com/ --profile xentraffic --acl public-read --exclude "*.DS_Store"

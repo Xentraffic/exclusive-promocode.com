@@ -5,18 +5,18 @@
     </head>
     <body cz-shortcut-listen="true">
         <p dir="ltr">
-            mrttrck.com
+            exclusive-promocode.com
         </p>
         <p dir="ltr">
             Terms and Conditions of Use and other Disclosures
         </p>
         <p dir="ltr">
-            1. Introduction. Thank you for using mrttrck.com.
+            1. Introduction. Thank you for using exclusive-promocode.com.
         </p>
         <p dir="ltr">
             By using this site, you agree to be legally bound to this document which consists of our Terms of and Conditions of Use and other Disclosures, and
         constitutes a legally-binding agreement ("Agreement") governing the terms of providing you with our service. Throughout this document, the words "us,"
-        "we," "our," and "Company" refer to mrttrck.com, as is appropriate in the context of the use of the words. Likewise, the words "you" and "your"
+        "we," "our," and "Company" refer to exclusive-promocode.com, as is appropriate in the context of the use of the words. Likewise, the words "you" and "your"
         refer to you, the person who is being presented with this document for your agreement.
         </p>
         <p dir="ltr">
@@ -26,8 +26,8 @@
         </p>
         <br>
         <p>
-            2. Description of Service. mrttrck.com is a survey service which offers surveys, advertisements and/or other services as
-        consideration for the provision of information to mrttrck.com. Our surveys are made available to you as a result of your downloading,
+            2. Description of Service. exclusive-promocode.com is a survey service which offers surveys, advertisements and/or other services as
+        consideration for the provision of information to exclusive-promocode.com. Our surveys are made available to you as a result of your downloading,
         purchasing or otherwise subscribing to or using an application, tool bar or the like on your computer. We are in no way associated with or responsible for
         such application or tool bar.
         </p>
@@ -82,7 +82,7 @@
         </p>
         <p dir="ltr">
             The trade names and trademarks of the persons or entities referred to in our advertisements are owned by those entities, and we are not affiliated with
-        them in any way. mrttrck.com holds the intellectual property rights that refer to its own name only, including, without limitation, the Company
+        them in any way. exclusive-promocode.com holds the intellectual property rights that refer to its own name only, including, without limitation, the Company
         trademark, logo, design, text, graphics and forms, including the selection and arrangement of such elements. In addition, the entire Site is copyrighted as
         a collective work. Company holds the copyright in all other materials as well as in the collective work itself. The collective work may also include works
         that are the property of Company's licensors, or simply of other third parties who are referred to on the site but to whom the Company has no affiliation
@@ -99,9 +99,9 @@
         </p>
         <p dir="ltr">
             We may collect and store personal or other information that you voluntarily supply to us online while using the our service (e.g., while on the Site,
-        participating in a survey, or in responding via email to a feature provided on the Site). mrttrck.com only contacts individuals who specifically
+        participating in a survey, or in responding via email to a feature provided on the Site). exclusive-promocode.com only contacts individuals who specifically
         request that we do so or in the event that they have signed up to receive our messaging or have purchased one of our products or third-party offers.
-        mrttrck.com may collect personally identifying information from our users during online registration and online purchasing. Generally, this
+        exclusive-promocode.com may collect personally identifying information from our users during online registration and online purchasing. Generally, this
         information includes name and e-mail address for registration to receive our free newsletters and name, postal address, and credit card information when
         purchasing products.
         </p>
@@ -241,9 +241,9 @@
         <p></p>
         <br>
         <p>
-            7. Remedy for Dissatisfaction. If you are dissatisfied with the mrttrck.com Site or with any terms, conditions, rules, policies, guidelines,
-        or practices of mrttrck.com in operating the mrttrck.com Site, your sole and exclusive remedy is to discontinue using the
-        mrttrck.com Site.
+            7. Remedy for Dissatisfaction. If you are dissatisfied with the exclusive-promocode.com Site or with any terms, conditions, rules, policies, guidelines,
+        or practices of exclusive-promocode.com in operating the exclusive-promocode.com Site, your sole and exclusive remedy is to discontinue using the
+        exclusive-promocode.com Site.
         </p>
         <br>
         <p dir="ltr">
@@ -263,7 +263,7 @@
         confer upon COMPANY actual knowledge of facts or circumstances from which infringing material or acts are evident. If you believe in good faith that a
         notice of copyright infringement has been wrongly filed against you, the DMCA permits you to send to COMPANY a counter-notice. All notices and counter
         notices must meet the then current statutory requirements imposed by the DMCA; see http://www.loc.gov/copyright for details. COMPANY's Copyright Agent for
-        notice of claims of copyright infringement or counter notices can be reached as follows: Info@mrttrck.com
+        notice of claims of copyright infringement or counter notices can be reached as follows: Info@exclusive-promocode.com
         </p>
         <br>
         <p dir="ltr">
@@ -278,8 +278,8 @@
         to have occurred in the State of Ohio.
         </p>
         <p dir="ltr">
-            11. Forum of Dispute. In order to keep claims involving mrttrck.com simple, you agree that any claim you may bring against
-        mrttrck.com arising from or relating to this Agreement will be heard solely by a court of competent jurisdiction in the State of Ohio.
+            11. Forum of Dispute. In order to keep claims involving exclusive-promocode.com simple, you agree that any claim you may bring against
+        exclusive-promocode.com arising from or relating to this Agreement will be heard solely by a court of competent jurisdiction in the State of Ohio.
         Specifically, you agree that any disputes shall be heard, where eligible, solely within the small claims division ("Small Claims Court") of a State of Ohio
         county or municipal court, as established by chapter 1925 of the Ohio Revised Code. If the Small Claims Court has no jurisdiction to grant such
         relief, you will waive your right to obtain such relief against us.If you bring a dispute in a manner other than in accordance with this section,
@@ -288,16 +288,16 @@
         prevailing party's reasonable attorneys' fees, costs, and disbursements in relation to the dispute.
         </p>
         <p dir="ltr">
-            12. Finality. This Agreement, including any and all documents referenced herein, constitute the entire agreement between mrttrck.com	and you pertaining to the subject matter hereof.
+            12. Finality. This Agreement, including any and all documents referenced herein, constitute the entire agreement between exclusive-promocode.com	and you pertaining to the subject matter hereof.
         </p>
         <p dir="ltr">
-            13. Non-Waiver. mrttrck.com's failure to insist upon or enforce strict performance of any provision of this Agreement shall not be construed
+            13. Non-Waiver. exclusive-promocode.com's failure to insist upon or enforce strict performance of any provision of this Agreement shall not be construed
         as a waiver of any provisions or right. If any of the provisions contained in this Agreement be determined to be void, invalid or otherwise unenforceable
         by a court of competent jurisdiction, such determination shall not affect the remaining provisions contained herein. This Agreement shall be governed by
         and construed in accordance with the laws applicable in the State of Ohio, including the federal law of the United States.
         </p>
         <p dir="ltr">
-            14. Prior Agreements. This Agreement, which includes the mrttrck.com Privacy Policy, constitutes the entire agreement of the parties with
+            14. Prior Agreements. This Agreement, which includes the exclusive-promocode.com Privacy Policy, constitutes the entire agreement of the parties with
         respect to the subject matter hereto and supersedes and cancels all prior and contemporaneous agreements, claims, representations and understandings of the
         parties in connection with the subject matter addressed herein, oral or written.
         </p>
@@ -306,12 +306,12 @@
         amendments will become effective immediately.Please review these Terms and Conditions periodically. Your continued use of the Site following the
         posting of changes and/or modifications will constitute your acceptance of the revised Terms and Conditions and the reasonableness of these standards for
         notice of changes. For your information, this page was last updated as of the date at the top of these Terms of Service. Each access of information or
-        submission of information to or from mrttrck.com will be a separate, discrete transaction based on the then prevailing terms.
+        submission of information to or from exclusive-promocode.com will be a separate, discrete transaction based on the then prevailing terms.
         </p>
         <p dir="ltr">
             15. Severability. In the event that a provision of this Agreement is found to be unlawful, conflicting with another provision of the Agreement, or
         otherwise unenforceable, the Agreement will remain in force as though it had been entered into without that unenforceable provision being included in
-        it.If two or more provisions of this Agreement are deemed to conflict with each other's operation, mrttrck.com shall have the sole right to
+        it.If two or more provisions of this Agreement are deemed to conflict with each other's operation, exclusive-promocode.com shall have the sole right to
         elect which provision remains in force.
         </p>
         <p dir="ltr">
@@ -325,9 +325,9 @@
         bound by them.
         </p>
         <p dir="ltr">
-            18. Disputes with Sellers. You understand that all product ordering takes place through third party sites, and mrttrck.com is not liable for
+            18. Disputes with Sellers. You understand that all product ordering takes place through third party sites, and exclusive-promocode.com is not liable for
         any usage or ordering that takes place through any such third party. If you are dissatisfied with any product you have purchased, you may contact the
-        Seller at the respective links provided on the mrttrck.com's website. If you submit a complaint regarding the Seller to us, you agree that our sole
+        Seller at the respective links provided on the exclusive-promocode.com's website. If you submit a complaint regarding the Seller to us, you agree that our sole
         responsibility to you is to forward your complaint to the Seller.
         </p>
         <br>

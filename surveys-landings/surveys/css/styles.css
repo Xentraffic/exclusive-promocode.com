@@ -11,10 +11,6 @@ body {
   color: #333;
 }
 
-a,a:hover {
-  text-decoration: none;
-}
-
 img.banner {
   position: fixed;
   top: 0;

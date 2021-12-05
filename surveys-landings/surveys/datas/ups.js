@@ -59,16 +59,6 @@ const ups = {
             ]
         },
         {
-            "question": "How would you rate your overall impression of Wells Fargo",
-            "answers": [
-                "Excellent",
-                "Good",
-                "Average",
-                "Poor",
-                "Terrible"
-            ]
-        },
-        {
             "question": "When dealing with UPS delivery staff, do you feel they are friendly and courteous?",
             "answers": [
                 "Yes",
@@ -81,16 +71,6 @@ const ups = {
             "answers": [
                 "Yes",
                 "No",
-                "Not sure"
-            ]
-        },
-        {
-            "question": "How would you rate the quality of Wells Fargo's customer service?",
-            "answers": [
-                "Excellent",
-                "Good",
-                "Okay",
-                "Poor",
                 "Not sure"
             ]
         },
@@ -171,6 +151,6 @@ const ups = {
     ],
     "survey_id": "#wb74rpmabnu3t1j4i4soldl0",
     "terms_link": "https://exclusive-promocode.com/surveys/terms/terms1.html",
-    "terms": `<p style="color:#351C15">2020 All Rights Reserved.<br>This is an independent survey and marketing website which is not affiliated with or endorsed by <script type="text/javascript"></script>COVID-19 VACCINE OPINION or any online retailer or brand. This website does not claim to represent or own any of the trademarks, tradenames or rights associated with any of the offers which are the property of their respective owners who do not own, endorse, or promote this website. All images on this website are readily available in various places on the Internet and believed to be in public domain according to the U.S. Copyright Fair Use Act. Offer shipping and handling fees may apply. *See manufacturer's site for details as terms may vary with offers. This website receives compensation in exchange for promoting third party offers. See important terms and conditions regarding this survey, site, and advertisement <a href="/s3/terms/terms.php" style="color: #666666;"><u>here</u></a>.</p>`
+    "terms": `<p style="color:#351C15">2020 All Rights Reserved.<br>This is an independent survey and marketing website which is not affiliated with or endorsed by <script type="text/javascript"></script>UPS or any online retailer or brand. This website does not claim to represent or own any of the trademarks, tradenames or rights associated with any of the offers which are the property of their respective owners who do not own, endorse, or promote this website. All images on this website are readily available in various places on the Internet and believed to be in public domain according to the U.S. Copyright Fair Use Act. Offer shipping and handling fees may apply. *See manufacturer's site for details as terms may vary with offers. This website receives compensation in exchange for promoting third party offers. See important terms and conditions regarding this survey, site, and advertisement <a href="/s3/terms/terms.php" style="color: #666666;"><u>here</u></a>.</p>`
 }
 window.ups = ups;

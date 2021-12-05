@@ -1,0 +1,1 @@
+aws s3 sync surveys s3://exclusive-promocode.com/surveys --profile xentraffic --acl public-read --exclude "*.DS_Store"

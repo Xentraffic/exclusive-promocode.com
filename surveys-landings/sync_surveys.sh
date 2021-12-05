@@ -1,0 +1,1 @@
+aws s3 cp s3://exclusive-promocode.com/surveys surveys --recursive --profile xentraffic
