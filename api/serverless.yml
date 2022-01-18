@@ -2,7 +2,7 @@ service: EXCLUSIVE-PROMO-EMAIL-SERVICE
 
 provider:
   name: aws
-  runtime: python3.8
+  runtime: python3.9
   stage: PROD
   region: us-east-1
   lambdaHashingVersion: 20201221

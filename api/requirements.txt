@@ -1,1 +1,1 @@
-mailchimp3
+mailwizz-python-sdk

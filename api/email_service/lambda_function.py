@@ -6,16 +6,32 @@ except ImportError:
 import json
 import urllib.parse
 import re
+import os
 
-from mailchimp3 import MailChimp
+from mailwizz.base import Base
+from mailwizz.config import Config
+from mailwizz.endpoint.list_subscribers import ListSubscribers
 
-LIST_ID = '8da1ffa334'
+LIST_ID = os.environ["LIST_ID"]
+MAILWIZZ_API_KEY = os.environ["MAILWIZZ_API_KEY"]
+MAILWIZZ_API_URL = "https://www.ap.exclusive-deals-everyday.com/api/index.php"
 WEBSITE_BASE_URL = "https://exclusive-promocode.com"
 
-mailchimp_client = MailChimp(
-    mc_api='a0440e29b1e78a2f4ff64d53fcdd6eb7-us2', 
-    mc_user='xentraffic'
-)
+def setup():
+    # configuration object
+    config = Config({
+        'api_url': MAILWIZZ_API_URL,
+        'public_key': MAILWIZZ_API_KEY,
+        'private_key': "",
+        'charset': 'utf-8'
+    })
+
+    # now inject the configuration and we are ready to make api calls
+    Base.set_config(config)
+
+setup()
+
+endpoint = ListSubscribers()
 
 def handler(event, context):  
     body = event.get("body") or ""
@@ -28,16 +44,16 @@ def handler(event, context):
         if not email:
             return not_invalid_body_response()
 
-        if check_email(email):
+        if not is_email_valid(email):
             return not_invalid_body_response("Invalid email")   
 
-        resp = mailchimp_client.lists.members.create(LIST_ID, {
-            'email_address': email,
-            'status': 'subscribed',
-            'merge_fields': {
+        endpoint.create(
+            LIST_ID,
+            {
+                'EMAIL': email,
                 'SOURCE': source
-            },
-        })
+            }
+        )
 
         return success_response()
     except Exception as e:
@@ -51,7 +67,7 @@ def parse_query_string(qs):
         query_params[key_value[0]] = urllib.parse.unquote(key_value[1])
     return query_params
 
-def check_email(email):
+def is_email_valid(email):
     if(re.fullmatch(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b', email)):
         return True
     else:
