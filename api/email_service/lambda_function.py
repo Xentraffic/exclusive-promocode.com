@@ -12,10 +12,11 @@ from mailwizz.base import Base
 from mailwizz.config import Config
 from mailwizz.endpoint.list_subscribers import ListSubscribers
 
+# Set in lambda directly
 LIST_ID = os.environ["LIST_ID"]
 MAILWIZZ_API_KEY = os.environ["MAILWIZZ_API_KEY"]
-MAILWIZZ_API_URL = "https://www.ap.exclusive-deals-everyday.com/api/index.php"
-WEBSITE_BASE_URL = "https://exclusive-promocode.com"
+MAILWIZZ_API_URL = os.environ["MAILWIZZ_API_URL"]
+WEBSITE_BASE_URL = os.environ["WEBBASE_URL"]
 
 def setup():
     # configuration object

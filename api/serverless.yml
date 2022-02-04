@@ -1,5 +1,7 @@
 service: EXCLUSIVE-PROMO-EMAIL-SERVICE
 
+variablesResolutionMode: 20210219
+
 provider:
   name: aws
   runtime: python3.9
@@ -7,26 +9,34 @@ provider:
   region: us-east-1
   lambdaHashingVersion: 20201221
   profile: xentraffic
+
 custom:
+  dotenvVars: ${file(configs.js)} 
   pythonRequirements:
     zip: true
 
 functions:
   SUBSCRIBE:
     handler: email_service/lambda_function.handler
+    environment:
+      LIST_ID: ${self:custom.dotenvVars.LIST_ID}
+      MAILWIZZ_API_KEY: ${self:custom.dotenvVars.MAILWIZZ_API_KEY}
+      MAILWIZZ_API_URL: ${self:custom.dotenvVars.MAILWIZZ_API_URL}
+      WEBBASE_URL: ${self:custom.dotenvVars.WEBBASE_URL}
     memorySize: 128
-    description: Subscribe user's email to EmailNami.
+    description: Subscribe user's email to MailWizz list.
     events:
       - http: 
           path: subscribe
           method: post
           cors:
-            origin: 'https://exclusive-promocode.com'
+            origin: ${self:custom.dotenvVars.WEBBASE_URL}
     package:
       patterns:
         - '!node_modules/**'
         - '!venv/**'
         - '!package.json'
         - '!package-lock.json'
+
 plugins:
   - serverless-python-requirements
