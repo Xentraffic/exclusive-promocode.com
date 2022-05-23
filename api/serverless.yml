@@ -1,13 +1,10 @@
 service: EXCLUSIVE-PROMO-EMAIL-SERVICE
 
-variablesResolutionMode: 20210219
-
 provider:
   name: aws
   runtime: python3.9
   stage: PROD
   region: us-east-1
-  lambdaHashingVersion: 20201221
   profile: xentraffic
 
 custom:
